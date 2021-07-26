@@ -1,0 +1,291 @@
+html {
+    font-family: arial, sans-serif;
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+/* Whole page container */
+.whole-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+/* Top Bar */
+.top-bar {
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    box-sizing: border-box;
+    height: 60px;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.top-bar-items {
+    height: 60px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.top-links-ul {
+    margin: auto;
+    padding: 5px;
+    list-style-type: none;
+    display: flex;
+}
+.top-links-li {
+    display: flex;
+    padding: 0px 5px;
+}
+.top-links-a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font-size: 12px;
+}
+.top-links-a:hover {
+    text-decoration: underline;
+}
+.google-apps-container {
+    margin: auto;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.google-apps {
+    max-width: 25px;
+    max-height: 25px;
+    padding: 0px 5px 0 5px;
+}
+.google-apps-container:hover {
+    border-radius: 50%;
+    box-shadow: 0 1px 6px rgba(151, 151, 151, 0.5);
+    background-color: rgba(151, 151, 151, 0.125);
+}
+.user-avatar-container {
+    margin: auto;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-avatar {
+    max-width: 25px;
+    max-height: 25px;
+    display: flex;
+    padding: 0px 5px;
+}
+/* End of Top Bar */
+
+/* Google Logo */
+.google-logo-container {
+    padding: 20px;
+    display: flex;
+    box-sizing: border-box;
+    min-height: 90px;
+    max-height: 300px;
+    height: calc(100% - 560px);
+    align-items: flex-end;
+    justify-content: center;
+
+}
+.google-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+
+}
+/* End of Google Logo */
+
+/* Search Box and Search Buttons */
+.search-box {
+    padding: 20px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.central-search {
+    display: flex;
+}
+.search-container {
+    display: flex;
+    height: 45px;
+    width: 584px;
+    border: 1px solid #ededee;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px transparent;
+}
+#search-logo {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+.search-bar {
+    height: 45px;
+    width: 565px;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+
+}
+.search-bar:focus {
+    outline: none;
+}
+.search-container:hover {
+    border: 1px solid #ededee;
+    box-shadow: 0 1px 5px #d8d8d8;
+}
+#mic-logo {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+.button-container {
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.search-button1 {
+    font-size: 15px;
+    height: 40px;
+    margin: 5px 5px 5px 5px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 4px;
+    border: 1px solid white;
+    box-shadow: 1px solid white;
+    background-color: #f8f8f8;
+}
+.search-button2 {
+    font-size: 15px;
+    height: 40px;
+    margin: 5px 5px 5px 5px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 4px;
+    border: 1px solid white;
+    box-shadow: 1px solid white;
+    background-color: #f8f8f8;
+
+}
+.search-button1:hover {
+    background-color: #f6f6f6;
+    border: 1px solid #aaaaaa1a;
+    box-shadow: 0 1px 1px #aaaaaa75;
+    color: #292424
+}
+.search-button2:hover {
+    background-color: #f6f6f6;
+    border: 1px solid #aaaaaa1a;
+    box-shadow: 0 1px 1px #aaaaaa75;
+    color: #292424
+}
+/* End of Search Bar and Buttons */
+
+/* Language Options */
+.language-options {
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.language-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0 5px 0 5px;
+    text-align: center;
+}
+.en-lang-li {
+    padding: 0px 5px 0px 5px;
+}
+.swe-lang-li {
+    padding: 0px 5px 0px 5px;
+
+}
+.en-lang-a {
+    text-decoration: none;
+}
+.swe-lang-a {
+    text-decoration: none;
+}
+/* End of Language Options */
+
+/* Bottom Links */
+.bottom-links {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: row;
+    box-sizing:border-box;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+    background-color: #ececec;
+}
+.bottom-links-left-container {
+    display: flex;
+    justify-content: left;
+}
+.bottom-links-right-container {
+    display: flex;
+    justify-content: right;
+
+}
+.bottom-links-ul-left {
+    margin: auto;
+    padding: 5px;
+    list-style-type: none;
+    display: flex;
+}
+.bottom-links-ul-right {
+    margin: auto;
+    padding: 5px;
+    list-style-type: none;
+    display: flex;
+}
+.bottom-links-li-left {
+    float: left;
+}
+.bottom-links-li-right {
+    float: right;
+}
+.bottom-links-a-left {
+    display: block;
+    color: rgb(85, 85, 85);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.bottom-links-a-right {
+    display: block;
+    color: rgb(85, 85, 85);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.bottom-links-a-left:hover {
+    text-decoration: underline;
+}
+.bottom-links-a-right:hover {
+    text-decoration: underline;
+}
